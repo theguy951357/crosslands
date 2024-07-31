@@ -27,3 +27,17 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+
+// Adjust the parallax scrolling effect
+window.addEventListener('scroll', function() {
+    const scrolled = window.scrollY;
+  
+    document.querySelectorAll('.bgimg-1, .bgimg-2, .bgimg-3').forEach(function(element) {
+      // Adjust the speed and ensure background stays within view
+      element.style.backgroundPositionY = -(scrolled * 0.5) + "px"; // Adjust multiplier for desired speed
+    });
+  });
+  
+  
+  
