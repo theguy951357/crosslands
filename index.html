@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/colors.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -15,93 +16,87 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top bg-bluebackground">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button w3-hover-light-gray w3-hide-medium w3-hide-large w3-right" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+    <a href="#home" class="w3-bar-item w3-button text-blue">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small text-blue"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small text-blue"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small text-blue"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  <div id="navDemo" class="w3-bar-block bg-bluebackground w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button text-blue" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button text-blue" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button text-blue" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-1 w3-display-container w3-opacity-min bg-greenbackground" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">ALIGN & THRIVE VT</span>
+    <span class="w3-center w3-padding-large text-blue w3-large w3-wide w3-animate-opacity">ALIGN & THRIVE VT</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love healing</em></p>
-  <p>Welcome to Align & Thrive VT, where your path to wellness and rejuvenation begins. I’m [Your Name], a dedicated healing practitioner with a passion for guiding you towards balance, vitality, and inner peace. With [X] years of experience in holistic healing modalities, my goal is to support your journey to optimal health and well-being.</p>
+<div class="w3-content w3-container w3-padding-64 bg-orange" id="about">
+  <h3 class="w3-center text-blue">ABOUT ME</h3>
+  <p class="w3-center"><em class="text-blue">I love healing</em></p>
+  <p class="text-blue">Welcome to Align & Thrive VT, where your path to wellness and rejuvenation begins. I’m [Your Name], a dedicated healing practitioner with a passion for guiding you towards balance, vitality, and inner peace. With [X] years of experience in holistic healing modalities, my goal is to support your journey to optimal health and well-being.</p>
 
-    <P>My healing practice integrates a range of techniques designed to address the root causes of stress, imbalances, and emotional blockages. From energy healing and Reiki to guided meditation and breathwork, I offer personalized sessions tailored to your unique needs. Each session is crafted to foster relaxation, enhance your energy flow, and promote overall harmony within your body and mind.</P>
+  <p class="text-blue">My healing practice integrates a range of techniques designed to address the root causes of stress, imbalances, and emotional blockages. From energy healing and Reiki to guided meditation and breathwork, I offer personalized sessions tailored to your unique needs. Each session is crafted to foster relaxation, enhance your energy flow, and promote overall harmony within your body and mind.</p>
     
-    <P>At [Your Name] Healing Arts, I believe in the power of natural healing to transform your life. Whether you're seeking relief from physical discomfort, emotional stress, or simply looking to enhance your well-being, my compassionate approach provides a safe and supportive space for your healing journey.</P>
+  <p class="text-blue">At [Your Name] Healing Arts, I believe in the power of natural healing to transform your life. Whether you're seeking relief from physical discomfort, emotional stress, or simply looking to enhance your well-being, my compassionate approach provides a safe and supportive space for your healing journey.</p>
     
-    <p>Embrace the power of holistic healing and take the first step towards a more balanced and vibrant you. Explore my offerings and discover how we can work together to achieve your wellness goals.</p>
+  <p class="text-blue">Embrace the power of holistic healing and take the first step towards a more balanced and vibrant you. Explore my offerings and discover how we can work together to achieve your wellness goals.</p>
+
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Sarah Crosslands</b></p><br>
+      <p><b class="text-blue"><i class="fa fa-user w3-margin-right"></i>Sarah Crosslands</b></p><br>
       <img src="images/sarah.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="text-blue">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
-  
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<div class="w3-row w3-center bg-red w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
+    <span class="w3-xlarge text-light-gray">14+</span><br>
     Partners
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
+    <span class="w3-xlarge text-light-gray">55+</span><br>
     Projects Done
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
+    <span class="w3-xlarge text-light-gray">89+</span><br>
     Happy Clients
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
+    <span class="w3-xlarge text-light-gray">150+</span><br>
     Meetings
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container w3-opacity-min bg-purplebackground">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge text-blue w3-wide">PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<div class="w3-content w3-container w3-padding-64 bg-blue" id="portfolio">
+  <h3 class="w3-center text-light-gray">MY WORK</h3>
+  <p class="w3-center text-light-gray"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -136,76 +131,61 @@
     </div>
 
     <div class="w3-col m3">
-      <img src="images/magicbowls.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="images/magicbowls.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Moody industrial">
     </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+<!-- Modal for full-width images on click -->
+<div id="modal01" class="w3-modal w3-black">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright" onclick="this.parentElement.style.display='none'">×</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<!-- Third Parallax Image with Contact Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min bg-redbackground">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    <span class="w3-xxlarge text-light-gray w3-wide">CONTACT</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+<div class="w3-content w3-container w3-padding-64 bg-greenbackground" id="contact">
+  <h3 class="w3-center text-blue">CONTACT ME</h3>
+  <p class="w3-center text-blue"><em>Feel free to drop me a line!</em></p>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="images/sarah.jpg" class="w3-image w3-round" style="width:100%">
+  <div class="w3-row">
+    <div class="w3-col m6 w3-large">
+      <p class="text-blue"><i class="fa fa-map-marker w3-xxlarge w3-margin-right"></i> 13th Avenue, NY, USA</p>
+      <p class="text-blue"><i class="fa fa-phone w3-xxlarge w3-margin-right"></i> +00 123 4567</p>
+      <p class="text-blue"><i class="fa fa-envelope w3-xxlarge w3-margin-right"></i> <a href="mailto:me@example.com" class="text-blue">me@example.com</a></p>
     </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+    
+    <div class="w3-col m6">
+      <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-border w3-margin-bottom bg-light-gray text-blue" type="text" placeholder="Name" required name="Name">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <input class="w3-input w3-border w3-margin-bottom bg-light-gray text-blue" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+        <input class="w3-input w3-border w3-margin-bottom bg-light-gray text-blue" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button bg-blue text-light-gray w3-padding-large" type="submit">SEND MESSAGE</button>
       </form>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center bg-blue w3-padding-16">
+  <p class="text-light-gray">© 2024 Align & Thrive VT. All rights reserved.</p>
 </footer>
- 
+
+
 <script src="scripts/main.js"></script>
 <script src="scripts/w3.js"></script>
 </body>
