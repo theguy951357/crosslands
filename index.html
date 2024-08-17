@@ -18,7 +18,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top bg-bluebackground">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-light-gray w3-hide-medium w3-hide-large w3-right" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button w3-hover-light-gray w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button text-blue">HOME</a>
@@ -29,45 +29,54 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block bg-bluebackground w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button text-blue" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button text-blue" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button text-blue" onclick="toggleFunction()">CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button text-alt-blue" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button text-alt-blue" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button text-alt-blue" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min bg-greenbackground" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large text-blue w3-large w3-wide w3-animate-opacity">ALIGN & THRIVE VT</span>
+    <span class="w3-center w3-padding-large w3-black text-alt-red w3-large w3-wide w3-animate-opacity">ALIGN & THRIVE VT</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64 bg-orange" id="about">
-  <h3 class="w3-center text-blue">ABOUT ME</h3>
-  <p class="w3-center"><em class="text-blue">I love healing</em></p>
-  <p class="text-blue">Welcome to Align & Thrive VT, where your path to wellness and rejuvenation begins. I’m [Your Name], a dedicated healing practitioner with a passion for guiding you towards balance, vitality, and inner peace. With [X] years of experience in holistic healing modalities, my goal is to support your journey to optimal health and well-being.</p>
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="w3-card w3-round bg-green">
+    <h3 class="w3-center text-alt-blue w3-padding-16">ABOUT ME</h3>
+  <p class="w3-center w3-padding-16 bg-green"><em class="text-alt-blue">I love healing</em></p>
+  </div>
+  <div class="w3-card w3-round bg-orange">
+    <p class="text-alt-blue w3-padding-16 w3-margin">Welcome to Align & Thrive VT, where your path to wellness and rejuvenation begins. I’m [Your Name], a dedicated healing practitioner with a passion for guiding you towards balance, vitality, and inner peace. With [X] years of experience in holistic healing modalities, my goal is to support your journey to optimal health and well-being.</p>
+  </div>
+  
+  <div class="w3-card w3-round bg-purple">
+    <p class="text-alt-blue w3-padding-16 w3-margin">My healing practice integrates a range of techniques designed to address the root causes of stress, imbalances, and emotional blockages. From energy healing and Reiki to guided meditation and breathwork, I offer personalized sessions tailored to your unique needs. Each session is crafted to foster relaxation, enhance your energy flow, and promote overall harmony within your body and mind.</p>
+  </div>
+  
+  <div class="w3-card w3-round bg-red">
+    <p class="text-alt-blue w3-padding-16 w3-margin">At [Your Name] Healing Arts, I believe in the power of natural healing to transform your life. Whether you're seeking relief from physical discomfort, emotional stress, or simply looking to enhance your well-being, my compassionate approach provides a safe and supportive space for your healing journey.</p>
+  </div>  
 
-  <p class="text-blue">My healing practice integrates a range of techniques designed to address the root causes of stress, imbalances, and emotional blockages. From energy healing and Reiki to guided meditation and breathwork, I offer personalized sessions tailored to your unique needs. Each session is crafted to foster relaxation, enhance your energy flow, and promote overall harmony within your body and mind.</p>
-    
-  <p class="text-blue">At [Your Name] Healing Arts, I believe in the power of natural healing to transform your life. Whether you're seeking relief from physical discomfort, emotional stress, or simply looking to enhance your well-being, my compassionate approach provides a safe and supportive space for your healing journey.</p>
-    
-  <p class="text-blue">Embrace the power of holistic healing and take the first step towards a more balanced and vibrant you. Explore my offerings and discover how we can work together to achieve your wellness goals.</p>
-
+  <div class="w3-card w3-round bg-blue">
+    <p class="text-alt-blue w3-padding-16 w3-margin">Embrace the power of holistic healing and take the first step towards a more balanced and vibrant you. Explore my offerings and discover how we can work together to achieve your wellness goals.</p>
+  </div>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b class="text-blue"><i class="fa fa-user w3-margin-right"></i>Sarah Crosslands</b></p><br>
+      <p><b class="text-alt-blue"><i class="fa fa-user w3-margin-right"></i>Sarah Crosslands</b></p><br>
       <img src="images/sarah.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p class="text-blue">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="text-alt-blue">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
 </div>
 
-<div class="w3-row w3-center bg-red w3-padding-16">
+<div class="w3-row w3-center bg-blue w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge text-light-gray">14+</span><br>
     Partners
@@ -89,14 +98,14 @@
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min bg-purplebackground">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge text-blue w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-black text-alt-red w3-wide">PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64 bg-blue" id="portfolio">
-  <h3 class="w3-center text-light-gray">MY WORK</h3>
-  <p class="w3-center text-light-gray"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <h3 class="w3-center text-alt-purple">MY WORK</h3>
+  <p class="w3-center text-alt-purple"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -147,20 +156,20 @@
 <!-- Third Parallax Image with Contact Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min bg-redbackground">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge text-light-gray w3-wide">CONTACT</span>
+    <span class="w3-xxlarge bg-blue text-alt-red w3-wide">CONTACT</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64 bg-greenbackground" id="contact">
-  <h3 class="w3-center text-blue">CONTACT ME</h3>
-  <p class="w3-center text-blue"><em>Feel free to drop me a line!</em></p>
+  <h3 class="w3-center text-alt-blue">CONTACT ME</h3>
+  <p class="w3-center text-alt-blue"><em>Feel free to drop me a line!</em></p>
 
   <div class="w3-row">
     <div class="w3-col m6 w3-large">
-      <p class="text-blue"><i class="fa fa-map-marker w3-xxlarge w3-margin-right"></i> 13th Avenue, NY, USA</p>
-      <p class="text-blue"><i class="fa fa-phone w3-xxlarge w3-margin-right"></i> +00 123 4567</p>
-      <p class="text-blue"><i class="fa fa-envelope w3-xxlarge w3-margin-right"></i> <a href="mailto:me@example.com" class="text-blue">me@example.com</a></p>
+      <p class="text-alt-blue"><i class="fa fa-map-marker w3-xxlarge w3-margin-right"></i> 13th Avenue, NY, USA</p>
+      <p class="text-alt-blue"><i class="fa fa-phone w3-xxlarge w3-margin-right"></i> +00 123 4567</p>
+      <p class="text-alt-blue"><i class="fa fa-envelope w3-xxlarge w3-margin-right"></i> <a href="mailto:me@example.com" class="text-alt-blue">me@example.com</a></p>
     </div>
     
     <div class="w3-col m6">
@@ -174,7 +183,7 @@
           </div>
         </div>
         <input class="w3-input w3-border w3-margin-bottom bg-light-gray text-blue" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button bg-blue text-light-gray w3-padding-large" type="submit">SEND MESSAGE</button>
+        <button class="w3-button bg-alt-blue text-light-gray w3-padding-large" type="submit">SEND MESSAGE</button>
       </form>
     </div>
   </div>
@@ -182,7 +191,7 @@
 
 <!-- Footer -->
 <footer class="w3-center bg-blue w3-padding-16">
-  <p class="text-light-gray">© 2024 Align & Thrive VT. All rights reserved.</p>
+  <p class="text-alt-green">© 2024 Align & Thrive VT. All rights reserved.</p>
 </footer>
 
 

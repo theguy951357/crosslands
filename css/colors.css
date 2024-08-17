@@ -23,6 +23,9 @@
     --alt-redbackground: #7a2323;
     --alt-purple: #4c2a65;
     --alt-purplebackground: #4c2a65;
+
+    /* Light gray color */
+    --light-gray: #d3d3d3;
   }
   
   /* Utility classes for backgrounds */
@@ -70,4 +73,6 @@
   .text-alt-redbackground { color: var(--alt-redbackground) !important; }
   .text-alt-purple { color: var(--alt-purple) !important; }
   .text-alt-purplebackground { color: var(--alt-purplebackground) !important; }
+
+  .text-light-gray { color: var(--light-gray) !important; }
   
