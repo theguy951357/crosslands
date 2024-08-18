@@ -43,27 +43,27 @@
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <div class="w3-card w3-round bg-green">
+<div class="w3-content w3-container w3-padding-64" id="about" style="height: 110em;">
+  <div id="about-me-first" class="w3-card w3-round bg-green" style="display: none;">
     <h3 class="w3-center text-alt-blue w3-padding-16">ABOUT ME</h3>
-  <p class="w3-center w3-padding-16 bg-green"><em class="text-alt-blue">I love healing</em></p>
+    <p class="w3-center w3-padding-16 bg-green"><em class="text-alt-blue">I love healing</em></p>
   </div>
-  <div class="w3-card w3-round bg-orange">
+  <div id="about-me-second" class="w3-card w3-round bg-orange" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">Welcome to Align & Thrive VT, where your path to wellness and rejuvenation begins. I’m [Your Name], a dedicated healing practitioner with a passion for guiding you towards balance, vitality, and inner peace. With [X] years of experience in holistic healing modalities, my goal is to support your journey to optimal health and well-being.</p>
   </div>
   
-  <div class="w3-card w3-round bg-purple">
+  <div id="about-me-third" class="w3-card w3-round bg-purple" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">My healing practice integrates a range of techniques designed to address the root causes of stress, imbalances, and emotional blockages. From energy healing and Reiki to guided meditation and breathwork, I offer personalized sessions tailored to your unique needs. Each session is crafted to foster relaxation, enhance your energy flow, and promote overall harmony within your body and mind.</p>
   </div>
   
-  <div class="w3-card w3-round bg-red">
+  <div id="about-me-fourth" class="w3-card w3-round bg-red" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">At Align & Thrive VT, I believe in the power of natural healing to transform your life. Whether you're seeking relief from physical discomfort, emotional stress, or simply looking to enhance your well-being, my compassionate approach provides a safe and supportive space for your healing journey.</p>
   </div>  
 
-  <div class="w3-card w3-round bg-blue">
+  <div id="about-me-fifth" class="w3-card w3-round bg-blue" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">Embrace the power of holistic healing and take the first step towards a more balanced and vibrant you. Explore my offerings and discover how we can work together to achieve your wellness goals.</p>
   </div>
-  <div class="w3-row">
+  <div class="w3-row" id="about-me-sixth" style="display: none;">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b class="text-alt-blue"><i class="fa fa-user w3-margin-right"></i>Sarah Crosslands</b></p><br>
       <img src="images/sarah.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
@@ -76,20 +76,20 @@
   </div>
 </div>
 
-<div class="w3-row w3-center bg-blue w3-padding-16">
-  <div class="w3-quarter w3-section">
+<div class="w3-row w3-center bg-blue w3-padding-16" id="results" style="height: 30em;" >
+  <div class="w3-quarter w3-section" id="results-one" style="display: none;">
     <span class="w3-xlarge text-alt-purple">14+</span><br>
     Partners
   </div>
-  <div class="w3-quarter w3-section">
+  <div class="w3-quarter w3-section" id="results-two" style="display: none;">
     <span class="w3-xlarge text-alt-blue">55+</span><br>
     Projects Done
   </div>
-  <div class="w3-quarter w3-section">
+  <div class="w3-quarter w3-section" id="results-three" style="display: none;">
     <span class="w3-xlarge text-alt-green">89+</span><br>
     Happy Clients
   </div>
-  <div class="w3-quarter w3-section">
+  <div class="w3-quarter w3-section" id="results-four" style="display: none;">
     <span class="w3-xlarge text-alt-red">150+</span><br>
     Meetings
   </div>
@@ -206,5 +206,6 @@
 
 <script src="scripts/main.js"></script>
 <script src="scripts/w3.js"></script>
+<script src="scripts/waypoints/lib/noframework.waypoints.min.js"></script>
 </body>
 </html>
