@@ -3,6 +3,7 @@ body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+  
 }
 
 /* Ensure the parallax images cover the viewport and stay centered */
@@ -97,6 +98,12 @@ footer {
 
 footer .w3-hover-opacity {
   opacity: 0.8;
+}
+
+.background{
+  background-image: url("../images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Turn off parallax scrolling for tablets and phones */

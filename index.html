@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/colors.css">
+<link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -38,29 +39,29 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min bg-greenbackground" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-round text-alt-red w3-xlarge w3-wide w3-animate-opacity">ALIGN & THRIVE VT</span>
+    <span class="w3-center w3-padding-large w3-black w3-round text-red w3-xlarge w3-wide w3-animate-opacity">ALIGN & THRIVE VT</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about" style="height: 110em;">
-  <div id="about-me-first" class="w3-card w3-round bg-green" style="display: none;">
+<div class="aboutmesize w3-content w3-container w3-padding-64 background" id="about">
+  <div id="about-me-first" class="w3-card w3-round bg-green w3-border border-alt-green w3-margin-bottom" style="display: none;">
     <h3 class="w3-center text-alt-blue w3-padding-16">ABOUT ME</h3>
     <p class="w3-center w3-padding-16 bg-green"><em class="text-alt-blue">I love healing</em></p>
   </div>
-  <div id="about-me-second" class="w3-card w3-round bg-orange" style="display: none;">
+  <div id="about-me-second" class="w3-card w3-round bg-orange w3-border border-alt-orange w3-margin-bottom" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">Welcome to Align & Thrive VT, where your path to wellness and rejuvenation begins. I’m [Your Name], a dedicated healing practitioner with a passion for guiding you towards balance, vitality, and inner peace. With [X] years of experience in holistic healing modalities, my goal is to support your journey to optimal health and well-being.</p>
   </div>
   
-  <div id="about-me-third" class="w3-card w3-round bg-purple" style="display: none;">
+  <div id="about-me-third" class="w3-card w3-round bg-purple w3-border border-alt-purple w3-margin-bottom" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">My healing practice integrates a range of techniques designed to address the root causes of stress, imbalances, and emotional blockages. From energy healing and Reiki to guided meditation and breathwork, I offer personalized sessions tailored to your unique needs. Each session is crafted to foster relaxation, enhance your energy flow, and promote overall harmony within your body and mind.</p>
   </div>
   
-  <div id="about-me-fourth" class="w3-card w3-round bg-red" style="display: none;">
+  <div id="about-me-fourth" class="w3-card w3-round bg-red w3-border border-alt-red w3-margin-bottom" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">At Align & Thrive VT, I believe in the power of natural healing to transform your life. Whether you're seeking relief from physical discomfort, emotional stress, or simply looking to enhance your well-being, my compassionate approach provides a safe and supportive space for your healing journey.</p>
   </div>  
 
-  <div id="about-me-fifth" class="w3-card w3-round bg-blue" style="display: none;">
+  <div id="about-me-fifth" class="w3-card w3-round bg-blue border-alt-blue w3-border w3-margin-bottom" style="display: none;">
     <p class="text-alt-blue w3-padding-16 w3-margin">Embrace the power of holistic healing and take the first step towards a more balanced and vibrant you. Explore my offerings and discover how we can work together to achieve your wellness goals.</p>
   </div>
   <div class="w3-row" id="about-me-sixth" style="display: none;">
@@ -70,13 +71,13 @@
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <div class="w3-col m6 w3-hide-small w3-padding-large bg-green w3-card w3-round w3-border border-alt-green">
       <p class="text-alt-blue">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
 </div>
 
-<div class="w3-row w3-center bg-blue w3-padding-16" id="results" style="height: 30em;" >
+<div class="w3-row w3-center bg-blue w3-padding-16 resultssize" id="results">
   <div class="w3-quarter w3-section" id="results-one" style="display: none;">
     <span class="w3-xlarge text-alt-purple">14+</span><br>
     Partners
@@ -193,7 +194,7 @@
 <footer class="w3-center bg-blue w3-padding-16">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/AltheaCrosslands" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
