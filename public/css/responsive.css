@@ -4,27 +4,27 @@
         height: 115em;
     }
     .resultssize{
-        height: 30em;
+        height: 15em;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .aboutmesize{
-        height: 80em;
+        height: 110em;
     }
     .resultssize{
-        height: 30em;
+        height: 10em;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .aboutmesize{
-        height: 80em;
+        height: 90em;
     }
     .resultssize{
-        height: 30em;
+        height: 10em;
     }
 }
 
