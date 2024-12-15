@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sacred Lotus Healing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/11.0.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/11.0.1/firebase-auth-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/11.0.1/firebase-database-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/11.0.1/firebase-firestore-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/11.0.1/firebase-functions-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/11.0.1/firebase-messaging-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/11.0.1/firebase-storage-compat.js"></script> -->
+    <script defer src="/__/firebase/11.0.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/11.0.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/11.0.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top bg-bluebackground">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-light-gray w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button text-blue">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small text-blue"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small text-blue"><i class="fa fa-th"></i> GALLERY</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small text-blue"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block bg-bluebackground w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button text-alt-blue" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button text-alt-blue" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button text-alt-blue" onclick="toggleFunction()">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min bg-greenbackground" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-round text-red w3-xlarge w3-wide w3-animate-opacity">SACRED LOTUS HEALING</span>
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="aboutmesize w3-content w3-container w3-padding-64 bg-purplebackground" id="about">
+      <div id="about-me-first" class="w3-card w3-round bg-green w3-border border-alt-green w3-margin-bottom" style="display: none;">
+        <h3 class="w3-center text-alt-blue w3-padding-16">ABOUT ME</h3>
+        <p class="w3-center w3-padding-16 bg-green"><em class="text-alt-blue">I love healing</em></p>
+      </div>
+      <div id="about-me-second" class="w3-card w3-round bg-orange w3-border border-alt-orange w3-margin-bottom" style="display: none;">
+        <p class="text-alt-blue w3-padding-16 w3-margin">Energy healing and yoga empower us to heal both inside and out, unlocking freedom from the perceived demands of life. These practices allow us to shift our focus toward what truly matters—our well-being and personal growth as individuals and as a collective community.</p>
+      </div>
+      
+      <div id="about-me-third" class="w3-card w3-round bg-blue w3-border border-alt-purple w3-margin-bottom" style="display: none;">
+        <p class="text-alt-blue w3-padding-16 w3-margin">At my practice, each session is fully customized to the unique needs of every client. Through tailored energy healing and yoga sessions, I help clients become more grounded, aligned within themselves, and harmonized with the world around them. Together, we work to clear away what no longer serves their highest good, making space for them to thrive and live their best lives.</p>
+      </div>
+      
+      <div id="about-me-fourth" class="w3-card w3-round bg-red w3-border border-alt-red w3-margin-bottom" style="display: none;">
+        <p class="text-alt-blue w3-padding-16 w3-margin">Whether you’re seeking to deepen your spiritual practice, release emotional or physical blockages, or simply reconnect with your inner self, these healing sessions are designed to promote holistic wellness and growth.</p>
+      </div>  
+
+      
+      <div class="w3-row" id="about-me-sixth" style="display: none;">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p><b class="text-alt-blue"><i class="fa fa-user w3-margin-right"></i>Sarah Crosslands</b></p><br>
+          <img src="images/sarah.jpeg" class="w3-round w3-image" alt="Photo of Me" width="350px" height="250px">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large bg-green w3-card w3-round w3-border border-alt-green">
+          <p class="text-alt-blue">I am a certified Master Energy Healer and Yoga Instructor with over 30 years of yoga experience and more than 20 years of expertise in energy transmutation. Through my extensive journey with yoga, meditation, and energy healing, I’ve discovered that the body has an incredible ability to heal itself through intentional movement, mindfulness, and focused energy work.</p>
+          <p class="text-alt-blue">Healing is not a straight line; it’s a beautiful, transformative dance. As a dedicated healer, I am passionate about helping others find inner peace and guide them along their healing journeys, whatever form that may take. Whether you're looking to deepen your yoga practice, engage in energy healing, or explore mind-body wellness, I’m here to support you every step of the way.</p>
+          <p class="text-alt-blue">My goal is to empower you to embrace your unique path to healing, fostering both physical well-being and emotional balance. Together, we can cultivate the peace within that allows you to move forward on your destined path with grace and intention.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-center bg-blue w3-padding-16 resultssize" id="results">
+      <div class="w3-half w3-section" id="results-one" style="display: none;">
+        <span class="w3-xlarge text-alt-purple">30+ years</span><br>
+        Yoga Experience
+      </div>
+      <div class="w3-half w3-section" id="results-two" style="display: none;">
+        <span class="w3-xlarge text-alt-blue">20+ years</span><br>
+        Energy Transmutation
+      </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min bg-purplebackground">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-padding-16 w3-round w3-black text-red w3-wide">GALLERY</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64 bg-blue" id="portfolio">
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="images/sarahoffice1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="images/sarahoffice3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="images/sarahoffice4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="images/sarahoffice5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img src="images/sarahoffice2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full-width images on click -->
+    <div id="modal01" class="w3-modal w3-black">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright" onclick="this.parentElement.style.display='none'">×</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min bg-redbackground">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-padding-16 w3-round w3-black text-red w3-wide">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64 bg-greenbackground" id="contact">
+      <h3 class="w3-center text-alt-blue">CONTACT ME</h3>
+      <p class="w3-center text-alt-blue"><em>Set up an appointment!</em></p>
+
+      <div class="w3-row">
+        <div class="w3-col m6 w3-large">
+          <p class="text-alt-blue"><i class="fa fa-map-marker w3-xxlarge w3-margin-right"></i> 368 Dorset Street Suite 3, South Burlington, VT, United States</p>
+          <p class="text-alt-blue"><i class="fa fa-phone w3-xxlarge w3-margin-right"></i> (802) 735-7019</p>
+          <p class="text-alt-blue"><i class="fa fa-envelope w3-xxlarge w3-margin-right"></i> <a href="mailto:scrosslands@my.com" class="text-alt-blue">scrosslands@my.com</a></p>
+        </div>
+        
+        <div class="w3-col m6">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center bg-blue w3-padding-16">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <!-- <a href="https://www.facebook.com/AltheaCrosslands" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+      </div>
+      <p class="text-alt-green">© 2024 Sacred Lotus Healing. All rights reserved.</p>
+    </footer>
+
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/waypoints/lib/noframework.waypoints.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  
+}
+
+/* Ensure the parallax images cover the viewport and stay centered */
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh; /* Full viewport height */
+}
+
+.bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:auto;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Specific settings for each image */
+.bgimg-1 {
+  background-image: url('../images/parallax1.jpg');
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.bgimg-2 {
+  background-image: url("../images/magicbowls.jpg");
+  min-height: 400px; /* Adjust as needed */
+}
+
+.bgimg-3 {
+  background-image: url("../images/parallax3.jpg");
+  min-height: 400px; /* Adjust as needed */
+}
+
+
+/* Additional styles for a more colorful and stylish look */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.w3-bar {
+  background-color: var(--alt-blue); /* Using alt-blue from colors.css */
+}
+
+.w3-bar-item {
+  color: var(--white); /* White text for better contrast */
+}
+
+.w3-button:hover {
+  background-color: var(--alt-orange); /* Using alt-orange from colors.css */
+}
+
+
+
+.w3-content {
+  background-color: var(--light-grey); /* Light grey background for contrast */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.w3-modal-content img {
+  border: 2px solid var(--alt-purple); /* Using alt-purple from colors.css */
+}
+
+.w3-dark-grey {
+  background-color: var(--dark-grey); /* Using dark-grey from colors.css */
+}
+
+.w3-hover-opacity {
+  opacity: 0.8;
+}
+
+.w3-button.w3-light-grey {
+  background-color: var(--alt-blue); /* Using alt-blue for light-grey button */
+  color: var(--white); /* White text for contrast */
+}
+
+.w3-button.w3-alt-red {
+  background-color: var(--alt-red); /* Using alt-red from colors.css */
+  color: var(--white); /* White text for contrast */
+}
+
+.w3-button.w3-alt-red:hover {
+  background-color: var(--original-red); /* Original red background on hover */
+}
+
+footer {
+  background-color: var(--alt-blue); /* Using alt-blue for footer background */
+  color: var(--white); /* White text for contrast */
+}
+
+footer .w3-hover-opacity {
+  opacity: 0.8;
+}
+
+.background{
+  background-image: url("../images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  } */
+/* } */
